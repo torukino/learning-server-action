@@ -1,3 +1,20 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": "next/core-web-vitals",
+	"plugins": ["import", "unused-imports"],
+	"rules": {
+		// import文をアルファベット順に並べ替え
+		"import/order": [
+			"error",
+			{
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				}
+			}
+		],
+		// 未使用のimportをエラーとして報告
+		"unused-imports/no-unused-imports": "error",
+		// 未使用の変数をエラーとして報告（import文にも適用されます）
+		"no-unused-vars": "error"
+	}
 }
