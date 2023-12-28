@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+:root {
+  height: 100%;
+}
+
+
 .primaryButton {
 	@apply bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700;
 }
@@ -9,3 +16,4 @@
 .secondaryButton {
 	@apply bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700;
 }
+

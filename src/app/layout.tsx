@@ -1,7 +1,8 @@
-import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
+
+import type { Metadata } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,6 +31,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						</Link>
 						<Link href="/client2" className="my-2 primaryButton">
 							cleint2
+						</Link>
+						<Link href="/playground" className="my-2 primaryButton">
+							playground
 						</Link>
 					</div>
 					<div className="ml-8 grow">{children}</div>
