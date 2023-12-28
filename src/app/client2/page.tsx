@@ -38,7 +38,7 @@ export default function Page() {
 					<Label>名前：</Label>
 					<Input name="name" onChange={e => setNameFunc(e.target.value)} placeholder="名前を入力" />
 				</Field>
-				<Button color="lime" type="submit">
+				<Button color="cyan" type="submit">
 					Save changes
 				</Button>
 			</form>
