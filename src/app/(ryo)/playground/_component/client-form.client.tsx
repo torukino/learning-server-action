@@ -5,7 +5,7 @@ import { Strong, Text } from '@/components/catalyst/text'
 const ClientForm = () => {
 	return (
 		<Text>
-			<Strong>Server Form</Strong>
+			<Strong>Client Form</Strong>
 		</Text>
 	)
 }
