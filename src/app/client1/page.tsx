@@ -1,7 +1,9 @@
 'use client'
-import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { useState } from 'react'
+
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { useDebouncedCallback } from 'use-debounce'
+
 import { submitAction } from '@/actions/actions'
 export default function Page() {
 	const searchParams = useSearchParams()
